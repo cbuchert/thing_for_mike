@@ -1,0 +1,40 @@
+:root {
+  --bg-color: #e0e0e0;
+  --tv-bg-color: #000000;
+  --tv-text-color: #00aa22;
+}
+
+html, body {
+  background-color: var(--bg-color);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tv {
+}
+
+.image-overlay {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  position: absolute;
+}
+
+.screen {
+  background-color: var(--tv-bg-color);
+  color: var(--tv-text-color);
+}
+
+.content {
+  font-family: Consolas, "Courier New", monospace;
+  overflow: scroll;
+}
